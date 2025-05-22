@@ -1,4 +1,5 @@
-import {getUsers, getUserById, registerUserService, loginUserService} from "../services/userService.js";
+import {getUsers, getUserById, registerUserService, loginUserService } from "../services/userService.js";
+
 import jwt from "jsonwebtoken";
 
 export const getAllUsers = async (req, res) => {

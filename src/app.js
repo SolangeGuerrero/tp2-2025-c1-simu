@@ -2,6 +2,7 @@ import express from "express";
 import morgan from "morgan";
 import userRoutes from "./routes/userRoute.js";
 import movieRoutes from "./routes/movieRouter.js";
+import commentRoutes from "./routes/commentRouter.js";
 import cors from "cors";
 
 const app = express();
@@ -14,6 +15,7 @@ app.use(cors());
 // Rutas
 app.use("/api/users", userRoutes);
 app.use("/api/movies", movieRoutes);
+app.use("/api/comments", commentRoutes);
 
 // Ruta base
 app.get("/", (req, res) => {

@@ -29,3 +29,9 @@ export const loginUserService = async ({ email, password }) => {
     const { password: _pw, ...userWithoutPassword } = user;
     return userWithoutPassword;
 }
+
+/*aca arranco*/
+
+export const addFavoriteMovieService = async (userId, movieId) => {
+    return await addFavoriteMovieToUser(userId, movieId);
+};
